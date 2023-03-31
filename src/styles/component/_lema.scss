@@ -1,0 +1,21 @@
+.lema-container{
+    @include centrar;
+    flex-direction: column;
+    padding: 50px;
+    background-color: $secondary-color;
+
+    p{
+        font-size: 40px;
+        max-width: 80%;
+        text-align: center;
+        color: $primary-color;
+    }
+    h3{
+        color: $color-alternative;
+        font-size: 40px;
+    }
+
+    img{
+        width: 150px;
+    }
+}

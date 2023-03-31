@@ -1,0 +1,92 @@
+.container_footer{
+    font-weight: bold;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 15px;
+    padding-top: 70px;
+    bottom: 0px;
+    background-image: linear-gradient(rgba(241, 203, 192, 0.5), rgba(241, 203, 192, 0.8)), url('../../imagenes/testipino.jpg');
+    background-size: cover;
+    background-position: center;
+    gap: 100px;
+    font-size: 20px;
+}
+.container_footer ul{
+    gap: 15px; 
+    display: flex;
+    list-style: none;
+    justify-content: initial;
+    align-items: initial;
+    flex-direction: column;
+    padding: 0px;
+}
+li{
+    cursor: pointer;
+}
+li:hover{
+    color: #4f1614;
+}
+
+.container_footer--form{
+    padding: 10px;
+    padding-top: 0px;
+    width: 300px;
+}
+.container_footer--form form{
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #ffffff !important;
+}
+.container_footer__networks--links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+#networks{
+    font-size: 35px;
+    color: #340e0d;
+}
+#networks:hover{
+    color: #4f1614;
+}
+#title{
+    font-weight: bolder;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .container_footer{
+        display: flex;
+        min-height: 100vh;
+        font-size: 18px;
+        gap: 30px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 620px){
+    .container_footer{
+        width: 100%;
+        min-height: 100vh;
+        font-size: 16px;
+        gap: 5px;
+        bottom: 0px;
+        padding: 5px;
+    }
+}
+@media only screen and (max-width: 420px){
+    .container_footer{
+        width: 100%;
+        min-height: 100vh;
+        font-size: 14px;
+        gap: 5px;
+        padding: 5px;
+    }
+    .container_footer--form{
+        width: 270px;
+    }
+}

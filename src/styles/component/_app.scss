@@ -1,0 +1,13 @@
+.App{
+    margin: 0;
+    min-width: 100%;
+    min-height: 100vh;
+    background-color: $primary-color;
+    font-family: 'Work Sans', sans-serif;
+}
+@media only screen and (max-width: 650px){
+    .App{
+        min-width: 100%;
+        min-height: 100vh;
+    }
+}

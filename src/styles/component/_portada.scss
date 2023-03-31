@@ -1,0 +1,42 @@
+.container_portada{
+    @include centrar;
+    margin-top: 100px;
+    background-image: url(../../../src/imagenes/portada.svg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+
+    section{
+        @include centrar;
+        flex-direction: column;
+        gap: 35px;
+        margin-bottom: 150px;
+
+        button{
+            background-color: $secondary-color;
+            color: $primary-color;
+            border-radius: 20px;
+            border: none;
+            padding: 8px 60px;
+            @include shadow;
+        }
+    }
+}
+
+@media only screen and (max-width: 830px){
+    .container_portada{
+        height: 600px;
+        background-image: url(../../../src/imagenes/fondo1.png);
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    section{
+        img{
+            width: 300px;
+        }
+    }
+}
