@@ -19,3 +19,29 @@
         width: 150px;
     }
 }
+
+@media only screen and (max-width: 650px){
+    .lema-container{
+        padding: 25px;
+
+        p{
+            font-size: 25px;
+            width: 95%;
+        }
+        h3{
+            font-size: 25px;
+        }
+    }
+}
+@media only screen and (max-width: 360px){
+    .lema-container{
+        padding: 10px;
+
+        p{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 20px;
+        }
+    }
+}

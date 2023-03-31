@@ -1,57 +1,72 @@
-.container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container_testimonios {
+    @include centrar;
     flex-direction: column;
     padding: 25px;
-}
-.container_testimonios{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 25px;
-}
-.container_testimonios img{
-    object-fit: cover;
-    width: 600px;
-    height: 300px;
-    margin-bottom: 10px;
-}
-.container_testimonios--contenido{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 25px;
-}
-.container_testimonios--contenido p{
-    font-size: 20px;
-    font-weight: 400;
-    text-align: justify;
+    margin: 60px 0px;
+    background-image: url(../../../src/imagenes/fondo.svg);
+    background-position: center;
+    background-size: cover;
+
+    img {
+        object-fit: cover;
+        width: 600px;
+        height: 350px;
+        margin-bottom: 10px;
+    }
 }
 
-@media only screen and (max-width: 720px){
-    .container_testimonios--contenido p{
-        font-size: 18px;
+.container_testimonios--contenido {
+    @include centrar;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    padding: 25px;
+    gap: 100px;
+
+    p {
+        font-size: 20px;
+        font-weight: 400;
+        max-width: 500px;
     }
-    .container_testimonios{
-        display: flex;
-        width: 100%;
+
+    button {
+        @include boton;
     }
-    .container_testimonios img{
-        width: 400px;
+
+    h2 {
+        font-weight: bold;
     }
 }
-@media only screen and (max-width: 520px){
-    .container_testimonios img{
-        width: 300px;
+
+
+@media only screen and (max-width: 720px) {
+    .container_testimonios--contenido {
+        gap: 65px;
+
+        p {
+            font-size: 18px;
+        }
+
+        img {
+            width: 400px;
+        }
     }
-    .container_testimonios{
+
+    .container_testimonios {
         display: flex;
         width: 100%;
     }
-    .container_testimonios--contenido p{
-        font-size: 15px;
+}
+
+@media only screen and (max-width: 520px) {
+    .container_testimonios--contenido {
+        gap: 35px;
+
+        img {
+            width: 300px;
+        }
+
+        p {
+            font-size: 16px;
+        }
     }
 }

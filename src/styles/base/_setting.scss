@@ -11,8 +11,13 @@ $color-optional: #FFFDB7;
     font-family: 'Roboto', sans-serif;
 }
 
-@mixin font-Abril{
-    font-family: 'Abril', sans-serif;
+@mixin boton{
+    background-color: $secondary-color;
+    color: $primary-color;
+    border-radius: 25px;
+    height: 40px;
+    padding: 0px 35px;
+    border: none;
 }
 
 @mixin centrar {

@@ -9,7 +9,6 @@ const Inicio = () => {
             <Portada />
             <Lema/>
             <Aportes />
-            <hr />
             <Testimonios />
         </div>
     )

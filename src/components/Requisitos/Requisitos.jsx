@@ -4,7 +4,7 @@ import ListaDesordenada from "../ListaDesordenada/ListaDesordenada.jsx"
 const Requisitos = () => {
     return (
         <main className="container_requisitos">
-            <div className='container--titulo'><h1>REQUISITOS <span>ADOPCION</span></h1><hr /></div>
+            <div className='container--titulo'><h1>REQUISITOS <span>ADOPCION</span></h1></div>
             <aside className='container_requisitos--contenido'>
                 <div className='imagen'></div>
                 <p><span>Adoptar es un acto de responsabilidad y compromiso por lo que es importante que estes capacitado para hacerlo.
