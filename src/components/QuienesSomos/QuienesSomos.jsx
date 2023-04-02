@@ -4,7 +4,6 @@ const QuienesSomos = () => {
         <main className="container_nosotros">
             <aside className='container_nosotros--contenido'>
                 <h1>NOSOTROS</h1>
-                
                 <h2 id='subtitulos'>Nuestro equipo</h2>
                 <p id='p'>
                     FAUNA URBANA está compuesto por voluntarios que comparten el respeto por la
@@ -19,7 +18,6 @@ const QuienesSomos = () => {
                     respeto hacia todas las especies, entendiendo que no son “cosas” para ser utilizadas por el ser humano.
                     Rechazamos todo tipo de explotación animal, incluyendo su uso como vestimenta, comida, entretenimiento y experimentación.
                 </p>
-               
                 <h2 id='subtitulos'>Nuestros objetivos</h2>
                 <ul className='container_nosotros--ul'>
                     <li>Luchar contra el abandono, el maltrato y el sufrimiento animal.</li>
@@ -28,7 +26,6 @@ const QuienesSomos = () => {
                     <li>Concientizar a la sociedad sobre la importancia de la esterilización de mascotas.</li>
                     <li>Brindar asistencia a animales en situación de calle.</li>
                 </ul>
-               
                 <h2 id='subtitulos'>¿Cómo trabajamos?</h2>
                 <p id='p'>La acción directa: asistir a animales abandonados en situación de riesgo, promoviendo su
                     adopción y tenencia por parte de hogares responsables que estén en condiciones de brindarles albergue,

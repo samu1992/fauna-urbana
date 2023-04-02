@@ -14,6 +14,8 @@
         text-decoration: none;
         color: $primary-color;
         transition: all 0.5s;
+        text-transform: uppercase;
+        font-size: 16px;
 
         &:hover {
             color: $tertiary-color;
@@ -53,7 +55,8 @@
     border: 1px solid rgba(0, 0, 0, 0.2);
 
     &:hover {
-        display: block;
+        @include centrar;
+        flex-direction: column;
         position: absolute;
         top: 65px;
         right: 400px;
@@ -66,7 +69,8 @@
 }
 
 li:hover+.menu_desplegable {
-    display: block;
+    @include centrar;
+    flex-direction: column;
     position: absolute;
     top: 65px;
     right: 400px;
@@ -85,6 +89,7 @@ li:hover+.menu_desplegable {
 .container_nav #castracion {
     top: 65px;
     right: 65px;
+
 }
 
 .container_nav .castracion::after {

@@ -9,7 +9,7 @@ import Requisitos from './components/Requisitos/Requisitos.jsx';
 import Castracion from './components/Castracion/Castracion.jsx';
 import Donaciones from './components/Donaciones/Donaciones.jsx';
 import Contacto from './components/Contacto/Contacto.jsx';
-
+import Razas from './components/api/razas.jsx';
 function App() {
   return (
     <main className="App">
@@ -17,6 +17,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path='/' element={<Inicio />} />
+          <Route path='/Razas' element={<Razas/>}/>
           <Route path='/QuienesSomos' element={<QuienesSomos/>} />
           <Route path='/Rescatados' element={<Rescatados/>} />
           <Route path='/Requisitos' element={<Requisitos/>} />

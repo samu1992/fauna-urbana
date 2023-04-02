@@ -2,11 +2,12 @@
 const Contacto = () => {
     return (
         <main className="container_contacto">
+            
+            <aside className='container_contacto--formulario'>
             <section className="container_contacto--title">
-                <h1><span>Contacto</span></h1>
+                <h2>Contacto</h2>
                 <p>Para contactarse con nosotros complete el siguiente formulario y seleccione el área a donde quiere dirigirse. Muchas gracias.</p>
             </section>
-            <aside className='container_contacto--formulario'>
                 <form>
                     <label>Nombre y Apellido</label>
                     <input type="text" name="nombre" size='40' />

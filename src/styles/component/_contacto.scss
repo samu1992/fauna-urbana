@@ -1,69 +1,68 @@
 .container_contacto{
-    display: flex;
+    @include centrar;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap;
-    max-width: 50%;
-    padding: 150px;
+    margin: 200px 0px;
+    width: 100%;
+    padding: 15px;
+
+    h2{
+        font-size: 50px;
+        color: $secondary-color;
+    }
 }
 
-.container_contacto--formulario form{
-    display: flex;
-    flex-direction: column;
-    align-items: initial;
-    justify-content: initial;
-    flex-wrap: wrap;
+.container_contacto--formulario{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 25px;
+    border-radius: 25px;
+    @include shadow;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: initial;
+        justify-content: initial;
+        flex-wrap: wrap;
+    }
+
+    input{
+        max-width: 600px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        height: 50px;
+        margin-bottom: 30px;
+    }
+
+    select{
+        margin-bottom: 50px;
+        max-width: 100px;
+    }
+
+    textarea{
+        max-width: 600px;
+        height: 100px;
+    }
+
+    button{
+        @include boton;
+    }
+
+    p{
+        max-width: 600px;
+    }
 }
+
 .container_contacto--title{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.container_contacto--formulario input{
-    width: 600px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    height: 50px;
-    margin-bottom: 30px;
-}
-.container_contacto--formulario select{
-    margin-bottom: 50px;
-}
-.container_contacto--formulario textarea{
-    width: 600px;
-    height: 100px;
-}
-.container_contacto--formulario button{
-    padding: 10px 20px 10px 20px;
-    border: none;
-    background-color: #2a814c;
-    color: #ffffff;
-    border-radius: 5px;
-}
-.container_contacto input, textarea, select{
-    background-color: #f1f1f1fd;
-}
+
 
 @media only screen and (max-width: 770px){
     .container_contacto{
-        padding: 50px;
         margin-top: 150px;
         max-width: 100%;
     }
 }
-@media only screen and (max-width: 680px){
-    .container_contacto{
-        padding: 10px;
-    }
-    .container_contacto--formulario textarea{
-        margin: 5px;
-    }
-    .container_contacto--formulario input{
-        width: 80%;
-    }
-    .container_contacto--formulario textarea{
-        margin: 10px;
-        width: 80%;
-    }
-}
+

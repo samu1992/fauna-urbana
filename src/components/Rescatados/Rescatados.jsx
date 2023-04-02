@@ -1,6 +1,7 @@
 import { useState , useEffect } from "react";
 import Card from 'react-bootstrap/Card';
 import {data} from "./data.js";
+import { Link } from "react-router-dom";
 
 
 const Rescatados = () => {
@@ -23,6 +24,7 @@ const Rescatados = () => {
             {jsonData.map((item) => {
                 return (
                     <div>
+                        <Link to='/Contacto'>
                         <Card className="container_rescatados--card" key={item.id}>
                             <Card.Img alt="error en cargar foto de perro en adopcion" className="img" variant="top" src={item.foto} />
                             <Card.Body>
@@ -32,6 +34,7 @@ const Rescatados = () => {
                                 <button>Adoptar</button>
                             </Card.Body>
                         </Card>
+                        </Link>
                     </div>
                 )
             })}

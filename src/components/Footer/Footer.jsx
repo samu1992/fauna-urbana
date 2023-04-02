@@ -1,60 +1,33 @@
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
-
+import { Link } from "react-router-dom";
+import logo from '../../imagenes/logofinal.svg';
 
 const Footer = () => {
   return (
-    <main className="container_footer">
-      <section>
-        <h3 id='title'>LEGAL</h3>
-        <ul>
-          <li>Nuestros Datos</li>
-          <li>Terminos y Condiciones</li>
-          <li>Politica de Cookies</li>
-          <li>Politica de Privacidad</li>
-          <li>Seleccionar Pais</li>
-          <li id='container_footer__6'>Reclamos</li>
-        </ul>
-      </section>
-      <section>
-        <h3 id='title'>FU</h3>
-        <p>FAUNA URBANA (FU)<br /> es una asociación civil<br />
-          sin fines de lucro<br />
-          abocada a difundir,<br />
-          proteger y promover<br />
-          los derechos de los<br />
-          animales.</p>
-      </section>
-      <section className='container_footer--form'>
-        <h3 id='title'>MAILING</h3>
-        <Form>
-          <Form.Group className="mb-3" controlId="formGroupEmail">
-            <Form.Label>Recibí las novedades en tu mail!</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
-          <Button variant="primary" type="submit">
-            SUSCRIBIRME!
-          </Button>
-        </Form>
-      </section>
-      <section>
-        <h3 id='title'>MENU</h3>
-        <ul>
-          <li>Inicio</li>
-          <li>Contacto</li>
-          <li>Donaciones</li>
-          <li>Quienes Somos</li>
-        </ul>
-      </section>
-      <section className='container_footer--networks'>
-        <h3 id='title'>SEGUINOS EN:</h3>
-        <div className='container_footer__networks--links'>
-          <a id='networks' target='_blank' rel="noreferrer"  href="https://www.instagram.com/faunaurbanaba/"><i className=" fab fa-instagram"></i></a>
-          <a id='networks' href="."><i className="fab fa-facebook"></i></a>
-          <a id='networks' href="."><i className="fab fa-twitter"></i></a>
-        </div>
-      </section>
-    </main>
+    <footer className="container_footer">
+        <section className="footer-redes">
+            <picture><img alt="error en cargar el logo" src={logo}/></picture>
+            <h5>Seguinos en nuestras redes</h5>
+            <div>
+                <a href="."><i className=" fab fa-instagram"></i></a>
+                <a href="."><i className=" fab fa-facebook"></i></a>
+                <a href="."><i className=" fab fa-twitter"></i></a>
+            </div>
+        </section>
+        <section className="footer-menu">
+          <h3>MENU</h3>
+            <Link to='/QuienesSomos'>¿QUIÉNES SOMOS?</Link>
+            <Link to='/Rescatados'>Adopcion</Link>
+            <Link to='/Requisitos'>Requisitos Adopcion</Link>
+            <Link to='/Donaciones'>Donaciones</Link>
+            <Link to='/Contacto'>Contacto</Link>
+        </section>
+        <section className="footer-contacto">
+          <h3>TAMBIEN PODES CONTACTARNOS</h3>
+                <p><i className="fa fa-phone"></i>  +54 1131987501</p>
+                <p><i className="fa fa-location-dot"></i>  location</p>
+                <p><i className="fa fa-envelope"></i>  fauna@gmail.com</p>
+        </section>
+    </footer>
   )
 }
 export default Footer

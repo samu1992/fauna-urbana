@@ -10,7 +10,7 @@ const Castracion = () => {
             <aside className='container_castracion--contenido'>
                 <p><span>Castrar es la única opción real para evitar que sigan naciendo animales destinados a sufrir.
                     Nuevos nacimientos significan nuevos abandonos.</span></p>
-                <img alt='...error en cargar la foto de cachorros recien nacidos abandonados' src={Cachorros} />
+                <img alt='...error en cargar la foto de cachorros' src={Cachorros} />
                 <p>Existe un gran número de animales de compañía que son abandonados por sus dueños cada año.
                     Miles de ellos deambulan por las calles padeciendo hambre, enfermedades, accidentes y siendo víctimas
                     de maltrato. Entonces, <span>¿para qué traer más perros y gatos al mundo cuando hay miles sufriendo en las calles?</span></p>

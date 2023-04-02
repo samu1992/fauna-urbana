@@ -3,6 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 import pedro from '../../imagenes/testipedro.jpg';
 import areta from '../../imagenes/testipino.jpg';
 import juan from '../../imagenes/testijuan.jpg';
+import { Link } from 'react-router-dom';
 
 
 function Testimonios() {
@@ -42,7 +43,7 @@ function Testimonios() {
                         <div>
                             <h2>Conoce a nuestros felices adoptantes</h2>
                             <p>{items[index].text}</p>
-                            <button>QUIERO ADOPTAR</button>
+                            <Link to='/Rescatados'><button>QUIERO ADOPTAR</button></Link>
                         </div>
                         <img src={items[index].image} alt="...error en cargar foto de testimonio de adoptante" />
                     </section>

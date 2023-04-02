@@ -18,6 +18,11 @@ $color-optional: #FFFDB7;
     height: 40px;
     padding: 0px 35px;
     border: none;
+    transition: all 0.4s;
+
+    &:hover{
+        transform: scale(0.98);
+    }
 }
 
 @mixin centrar {

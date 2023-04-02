@@ -14,11 +14,7 @@
         margin-bottom: 150px;
 
         button{
-            background-color: $secondary-color;
-            color: $primary-color;
-            border-radius: 20px;
-            border: none;
-            padding: 8px 60px;
+            @include boton;
             @include shadow;
         }
     }

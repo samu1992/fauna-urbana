@@ -43,6 +43,11 @@
             position: absolute;
             bottom: -20px;
             @include boton;
+
+            a{
+                text-decoration: none;
+                color: $primary-color;
+            }
         }
     }
 }
