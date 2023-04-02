@@ -1,8 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { CSSTransition } from 'react-transition-group';
-import pedro from '../../imagenes/testipedro.jpg';
-import areta from '../../imagenes/testipino.jpg';
-import juan from '../../imagenes/testijuan.jpg';
 import { Link } from 'react-router-dom';
 
 
@@ -10,16 +7,16 @@ function Testimonios() {
     const [index, setIndex] = useState(0);
     const items = [
         {
-            image: pedro,
+            image: '/imagenes/testipedro.jpg',
             text: 'Lorem  consectetur adipiscing elit. ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.'
             
         },
         {
-            image: areta,
+            image: '/imagenes/testipino.jpg',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero  consectetur adipiscing elit. et velit interdum, ac aliquet odio mattis.'
         },
         {
-            image: juan,
+            image: '/imagenes/testijuan.jpg',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.'
         }
     ];

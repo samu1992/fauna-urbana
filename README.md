@@ -1,4 +1,4 @@
-![logo](https://github.com/samu1992/Fauna-Urbana/blob/master/src/imagenes/fondoGit.png)
+![logo](https://github.com/samu1992/Fauna-Urbana/blob/master/public/imagenes/fondoGit.png)
 
 ## Descripcion del Proyecto
 

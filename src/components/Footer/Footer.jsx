@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
-import logo from '../../imagenes/logofinal.svg';
+
 
 const Footer = () => {
   return (
     <footer className="container_footer">
         <section className="footer-redes">
-            <picture><img alt="error en cargar el logo" src={logo}/></picture>
+            <picture><img alt="error en cargar el logo" src='/imagenes/logofinal.svg'/></picture>
             <h5>Seguinos en nuestras redes</h5>
             <div>
                 <a href="."><i className=" fab fa-instagram"></i></a>

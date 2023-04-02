@@ -1,7 +1,7 @@
 .container_portada{
     @include centrar;
     margin-top: 100px;
-    background-image: url(../../../src/imagenes/portada.svg);
+    background-image: url(/imagenes/portada.svg);
     background-position: center;
     background-size: cover;
     width: 100%;

@@ -1,4 +1,4 @@
-import pino from '../../imagenes/pino.jpg';
+/* 
 import sombra from '../../imagenes/sombra.jpg';
 import pablo from '../../imagenes/pablo.jpg';
 import areta from '../../imagenes/areta.jpg';
@@ -7,14 +7,14 @@ import vito from '../../imagenes/vito.jpg';
 import loky from '../../imagenes/loky.jpg';
 import india from '../../imagenes/india.jpg';
 import megan from '../../imagenes/megan.jpg';
-import latte from '../../imagenes/latte.jpg';
+import latte from '../../imagenes/latte.jpg'; */
     export const data =[
         {
             "nombre": "Pino",
             "id": 1,
             "edad": "1 año",
             "rescatado": "Merlo",
-            "foto": pino,
+            "foto": '/imagenes/pino.jpg',
             "condicion": "Estable"
         },
         {
@@ -22,7 +22,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 2,
             "edad": "2 años",
             "rescatado": "Moron",
-            "foto": sombra,
+            "foto": '/imagenes/sombra.jpg',
             "condicion": "Delicada"
         },
         {
@@ -30,7 +30,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 3,
             "edad": "6 años",
             "rescatado": "Zarate",
-            "foto": pablo,
+            "foto": '/imagenes/pablo.jpg',
             "condicion": "Recuperacion"
         },
         {
@@ -38,7 +38,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 4,
             "edad": "3 años",
             "rescatado": "Lanus",
-            "foto": areta,
+            "foto": '/imagenes/areta.jpg',
             "condicion": "Sano"
         },
         {
@@ -46,7 +46,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 5,
             "edad": "4 años",
             "rescatado": "Chenaut",
-            "foto": menta,
+            "foto": '/imagenes/menta.jpg',
             "condicion": "Sana"
         },
         {
@@ -54,7 +54,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 6,
             "edad": "8 meses",
             "rescatado": "Martinez",
-            "foto": vito,
+            "foto": '/imagenes/vito.jpg',
             "condicion": "Recuperacion"
         },
         {
@@ -62,7 +62,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 7,
             "edad": "5 años",
             "rescatado": "Escobar",
-            "foto": loky,
+            "foto": '/imagenes/loky.jpg',
             "condicion": "Estable"
         },
         {
@@ -70,7 +70,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 8,
             "edad": "2 años",
             "rescatado": "Lanus",
-            "foto": india,
+            "foto": '/imagenes/india.jpg',
             "condicion": "Delicada"
         },
         {
@@ -78,7 +78,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 9,
             "edad": "7 años",
             "rescatado": "Banfield",
-            "foto": megan,
+            "foto": '/imagenes/megan.jpg',
             "condicion": "Sana"
         },
         {
@@ -86,7 +86,7 @@ import latte from '../../imagenes/latte.jpg';
             "id": 10,
             "edad": "6 años",
             "rescatado": "Lanus",
-            "foto": latte,
+            "foto": '/imagenes/megan.jpg',
             "condicion": "Delicada"
         }
     ]

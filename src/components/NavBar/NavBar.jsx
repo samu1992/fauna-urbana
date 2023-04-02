@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../imagenes/logofinal.svg';
-import logo2 from '../../imagenes/logo2.svg';
+
 
 
 const NavBar = () => {
@@ -9,7 +8,7 @@ const NavBar = () => {
 
     return (
         <nav className="container_nav">
-            <Link to="/"><div className="container_nav--logo"><img alt='logo de fauna' src={logo}/></div></Link>
+            <Link to="/"><div className="container_nav--logo"><img alt='logo de fauna' src='/imagenes/logofinal.svg'/></div></Link>
             <aside className="container_nav--li">
                 <li><Link to='/Razas' className='container_nav--link'>razas de perros</Link></li>
                 <li><Link to='/QuienesSomos' className='container_nav--link'>¿QUIÉNES SOMOS?</Link></li>
@@ -24,7 +23,7 @@ const NavBar = () => {
             </aside>
             <Link to='#' className='fa fa-bars bars' onClick={() => setMenuOpen(!menuOpen)}/>
             <nav className={`navbar--responsive ${menuOpen ? 'navbar--open' : 'navbar--closed'}`}>
-            <Link to="/"><div className='logo-responsive'><img alt='logo de fauna' src={logo2}/></div></Link>
+            <Link to="/"><div className='logo-responsive'><img alt='logo de fauna' src='/imagenes/logo2.svg'/></div></Link>
                 <Link to='/QuienesSomos'>¿Quienes Somos?</Link>
                 <Link to='/Rescatados'>Quiero Adoptar!</Link>
                 <Link to='/Requisitos'>Requisitos Adopcion</Link>

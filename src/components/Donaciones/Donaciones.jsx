@@ -1,4 +1,4 @@
-import Pagos from '../../imagenes/pagos.png'
+
 
 const Donaciones = () => {
     return (
@@ -25,7 +25,7 @@ const Donaciones = () => {
                         <p>(Doná el importe que quieras directamente en nuestra cuenta.)</p>
                         <p>Banco XXXXXX</p>
                         <p>Asociación Civil FAUNA<br /></p>
-                        <img alt='... error en cargar imagen con informacion bancaria' src={Pagos} />
+                        <img alt='... error en cargar imagen con informacion bancaria' src='/imagenes/pagos.png' />
                         <button>DONA CON DEBITO AUTOMATICO</button>
                     </div>
                 </section>
