@@ -1,4 +1,4 @@
-
+import React from "react"
 const Contacto = () => {
     return (
         <main className="container_contacto">

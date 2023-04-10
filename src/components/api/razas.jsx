@@ -22,31 +22,31 @@ const Razas = () => {
         fetchData();
     }, [page]);
 
-    const handleScroll = () => {
-        const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
-        if (scrollTop + clientHeight >= scrollHeight && !isLoading) {
-            setPage(prevPage => prevPage + 1);
-        }
-    };
-
     useEffect(() => {
+        const handleScroll = () => {
+            const { scrollTop, clientHeight, scrollHeight } = document.documentElement;
+            if (scrollTop + clientHeight >= scrollHeight && !isLoading) {
+                setPage(prevPage => prevPage + 1);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [isLoading]);
 
     return (
         <section className='razas-container'>
             <Testimonios />
             <h2>RAZAS</h2>
-            {breeds.map(breed => (
-                <article className='card-dog' key={breed.id}>
-                    <img src={breed.image.url} alt={breed.name} />
+            {breeds.map(({ id, name, bred_for, origin, temperament, life_span, image: { url } }) => (
+                <article className='card-dog' key={id}>
+                    <img src={url} alt={name} />
                     <div>
-                        <p><strong>NOMBRE: </strong>{breed.name}</p>
-                        <p><strong>TAMAÑO: </strong>{breed.bred_for}</p>
-                        <p><strong>ORIGEN: </strong>{breed.origin}</p>
-                        <p><strong>TEMPERAMENTO: </strong>{breed.temperament}</p>
-                        <p><strong>VIDA PROMEDIO: </strong>{breed.life_span}</p>
+                        <p><strong>NOMBRE: </strong>{name}</p>
+                        <p><strong>TAMAÑO: </strong>{bred_for}</p>
+                        <p><strong>ORIGEN: </strong>{origin}</p>
+                        <p><strong>TEMPERAMENTO: </strong>{temperament}</p>
+                        <p><strong>VIDA PROMEDIO: </strong>{life_span}</p>
                     </div>
                 </article>
             ))}

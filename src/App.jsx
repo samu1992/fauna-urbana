@@ -1,3 +1,4 @@
+import React from 'react';
 import NavBar from './components/NavBar/NavBar.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import QuienesSomos from './components/QuienesSomos/QuienesSomos.jsx';
@@ -10,10 +11,14 @@ import Castracion from './components/Castracion/Castracion.jsx';
 import Donaciones from './components/Donaciones/Donaciones.jsx';
 import Contacto from './components/Contacto/Contacto.jsx';
 import Razas from './components/api/razas.jsx';
+
+const AppContext = React.createContext();
 function App() {
+  const contextValue = { basename: '/' };
   return (
     <main className="App">
-      <BrowserRouter>
+      <BrowserRouter basename={contextValue.basename}>
+      <AppContext.Provider value={contextValue}>
         <NavBar />
         <Routes>
           <Route path='/' element={<Inicio />} />
@@ -26,6 +31,7 @@ function App() {
           <Route path='/Contacto' element={<Contacto />} />
         </Routes>
         <Footer />
+        </AppContext.Provider>
       </BrowserRouter>
     </main>
   );
