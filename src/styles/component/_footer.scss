@@ -65,5 +65,16 @@
 }
 
 @media only screen and (max-width: 480px){
-    
+    .container_footer{
+        @include centrar;
+        gap: 20px;
+
+        .footer-contacto{
+            @include centrar;
+
+            h3{
+                font-size: 16px;
+            }
+        }
+    }
 }
