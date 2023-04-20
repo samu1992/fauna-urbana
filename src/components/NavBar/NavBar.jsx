@@ -29,6 +29,7 @@ const NavBar = () => {
                 <Link to='/Requisitos'>Requisitos Adopcion</Link>
                 <Link to='/Donaciones'>Donaciones</Link>
                 <Link to='/Contacto'>Contacto</Link>
+                <Link to='/Razas'>razas de perros</Link>
             </nav>
         </nav>
     )
