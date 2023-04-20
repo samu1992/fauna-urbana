@@ -21,7 +21,7 @@ const NavBar = () => {
                 </div>
                 <li><Link to='./Contacto' className='container_nav--link'>Contacto</Link></li>
             </aside>
-            <Link to='#' className='fa fa-bars bars' onClick={() => setMenuOpen(!menuOpen)}/>
+            <Link to='#' id='bars' className='fa fa-bars bars' onClick={() => setMenuOpen(!menuOpen)}/>
             <nav className={`navbar--responsive ${menuOpen ? 'navbar--open' : 'navbar--closed'}`}>
             <Link to="/"><div className='logo-responsive'><img alt='logo de fauna' src='/imagenes/logo2.svg'/></div></Link>
                 <Link to='/QuienesSomos'>¿Quienes Somos?</Link>
