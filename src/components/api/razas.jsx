@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Testimonios from "../Testimonios/Testimonios.jsx";
 
+const API_URL = 'https://api.thedogapi.com/v1/breeds'
+const API_KEY = 'live_zi0p6LbN3h9LSP6hGsJ8TbMvFvTXbGYBsj3B2J8nVPTg3NVkz8UEdi2HKudxUuXU'
 const Razas = () => {
     const [breeds, setBreeds] = useState([]);
     const [page, setPage] = useState(1);
@@ -10,7 +12,11 @@ const Razas = () => {
         const fetchData = async () => {
             setIsLoading(true);
             try {
-                const response = await fetch(`https://api.thedogapi.com/v1/breeds?page=${page}&limit=3`);
+                const response = await fetch(`${API_URL}?page=${page}&limit=3`,{
+                    headers: {
+                        'x-api-key': API_KEY,
+                    }
+                });
                 const data = await response.json();
                 setBreeds(prevBreeds => [...prevBreeds, ...data]);
             } catch (error) {
